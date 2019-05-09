@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>Maggie For MO!</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -30,6 +30,21 @@ body, html {
     color: white!important;
     background-color: #265fff!important;
 }
+
+.opaque-background {
+  background-color: black;
+  opacity: .7;
+  color: white;
+  max-width: 600px;
+}
+
+.w3-xxlarge {
+  line-height: 35px;
+}
+
+.w3-jumbo {
+  line-height: 70px;
+}
 </style>
 <body>
 
@@ -57,22 +72,26 @@ body, html {
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
-  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">ISSUES</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">ENDORSEMENTS</a>
+  <a href="https://secure.actblue.com/" onclick="w3_close()" class="w3-bar-item w3-button">DONATE</a>
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
 </nav>
 
 <!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-center w3-text-white" style="padding:48px;   margin: auto;
-  width: 50%;
+  <div class="w3-display-center w3-text-white" style="padding:48px;    margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
   text-align: center;
-  padding: 10px;
-  padding-top: 200px;">
-    <span class="w3-jumbo w3-hide-small">Start something that matters</span><br>
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
-    <span class="w3-large">Stop wasting valuable time with projects that just isn't you.</span>
+  transform: translate(-50%, -50%);">
+  <div class="opaque-background">
+    <div class="w3-jumbo w3-hide-small ">Find someone who cares</div>
+    <div class="w3-xxlarge w3-hide-large w3-hide-medium ">Find someone who cares</div>
+    <span class="w3-large ">Stop wasting valuable time with people who just don't work for you.</span>
+  </div>
     <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top" style="background-color: #265fff !important; color: white !important;">Meet Maggie!</a></p>
   </div> 
   <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
@@ -174,8 +193,7 @@ body, html {
   <h3 class="w3-center">CONTACT</h3>
   <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
   <div style="margin-top:48px">
-    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>Kansas City, MO, US</p>
     <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
     <br>
     <form action="https://formspree.io/p4rk3rj0n@gmail.com" method="POST">
