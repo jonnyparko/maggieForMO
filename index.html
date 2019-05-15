@@ -39,13 +39,23 @@ img {
   padding: 16px;
 }
 
-.w3-white {
-  background-color: #002D58 !important;
+.w3-blue2 {
+  background-color:  #2759a9 !important;
   color: white !important;
-}
+} 
+
+ .w3-blue {
+  background-color: white !important;
+  color: #2759a9 !important;
+} 
 
 .w3-button:hover {
     color: red!important;
+    background-color: white !important;
+}
+
+.w3-button2:hover {
+    color: #2759a9 !important;
     background-color: white !important;
 }
 
@@ -88,7 +98,7 @@ img {
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar w3-white w3-card" id="myNavbar">
+  <div class="w3-bar w3-blue w3-card" id="myNavbar">
     <a href="#home" class="w3-bar-item w3-button w3-wide" style="padding: 0px !important"><img src="/maggieLogo.jpg" class="logo"></a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
@@ -107,7 +117,7 @@ img {
 </div>
 
 <!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left hide-medium w3-hide-large" style="display:none" id="mySidebar">
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left hide-medium w3-hide-large" style="display:none; background-color: #2759a9!important" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
   <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">ISSUES</a>
@@ -117,7 +127,7 @@ img {
 </nav>
 
 <!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+<header class="bgimg-1 w3-display-container" id="home">
   <div class="w3-display-center w3-text-white" style="padding:48px;    margin: 0;
   position: absolute;
   top: 50%;
@@ -126,11 +136,11 @@ img {
   text-align: center;
   transform: translate(-50%, -50%);">
   <div class="opaque-background">
-    <div class="w3-xxlarge" style="padding: 5px">Northland is where I work, where I live, <br>
+    <div class="w3-xxlarge" style="padding: 5px">The Northland is where I work, where I live, <br>
       and where I’m <i>from.</i></div>
     <!-- <span class="w3-large "><i>Northland is where I work, where I live, and where I’m from.</i></span> -->
   </div>
-    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top" style="background-color: #002D58 !important; color: white !important;">Meet Maggie!</a></p>
+    <p><a href="#about" class="w3-button2 w3-button w3-blue2 w3-white w3-padding-large w3-large w3-margin-top" style="filter: none !important;">Meet Maggie!</a></p>
   </div> 
   <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
@@ -145,8 +155,7 @@ img {
 <!-- About Section -->
 <div class="w3-container" style="padding:128px 16px" id="about">
   <h3 class="w3-center">ABOUT MAGGIE</h3>
-    <img src="/magandFam.png" alt="Maggie and family">
-   <p class="w3-center w3-large">
+   <p class="w3-center w3-large"><img src="/magandFam.png" alt="Maggie and family">
     As a mom and teacher in this community, I understand our need for candidates who will advocate for our Northland families and communities. 
     I am the product of great public education in the state of Missouri.  I graduated from Smithville High School, received my bachelor’s 
     degree at Truman State University and my Master’s in Education at the The University of Missouri at Kansas City.  After graduating from college, 
@@ -191,7 +200,7 @@ img {
 
 
 <!-- Promo Section "Statistics" -->
-<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64" id="work" style="background-color: #002D58!important;">
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64" id="work" style="background-color: #2759a9!important;">
     <h3 class="w3-center">Endorsements</h3>
   <div class="w3-quarter">
     <span class="w3-xxlarge">14+</span>
@@ -264,7 +273,7 @@ img {
 </div>
 
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64" style="background-color: #002D58!important;">
+<footer class="w3-center w3-black w3-padding-64" style="background-color: #2759a9!important;">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
