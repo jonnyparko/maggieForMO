@@ -18,8 +18,9 @@ body, html {
 .bgimg-1 {
   background-position: center;
   background-size: cover;
-  background-image: url("/merica.jpg");
-  min-height: 100%;
+  background-image: url("/maggie.jpg");
+  min-height: 95%;
+  margin-top: 59px;
 }
 
 .logo {
@@ -79,19 +80,19 @@ img {
 }
 
 @media (max-width: 720px) {
-  .w3-hide-small {
+  .w3-hide-small2 {
       display: none!important;
   }
 }
 
 @media (max-width: 992px) and (min-width: 721px) {
-  .hide-medium {
+  .hide-medium2 {
       display: none!important;
   }
 }
 
 @media (min-width: 721px) {
-  .w3-hide-large {
+  .w3-hide-large2 {
       display: none!important;
   }
 }
@@ -105,7 +106,7 @@ img {
   <div class="w3-bar w3-blue w3-card" id="myNavbar">
     <a href="#home" class="w3-bar-item w3-button w3-wide" style="padding: 0px !important"><img src="/maggieLogo.jpg" class="logo"></a>
     <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
+    <div class="w3-right w3-hide-small2">
       <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
       <a href="#team" class="w3-bar-item w3-button"> ISSUES</a>
       <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> ENDORSEMENTS</a>
@@ -114,14 +115,14 @@ img {
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="w3_open()">
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large2" onclick="w3_open()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
 </div>
 
 <!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left hide-medium w3-hide-large" style="display:none; background-color: #2759a9!important" id="mySidebar">
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left hide-medium2 w3-hide-large" style="display:none; background-color: #2759a9!important" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
   <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">ISSUES</a>
@@ -139,10 +140,13 @@ img {
   margin-right: -50%;
   text-align: center;
   transform: translate(-50%, -50%);">
-  <div class="opaque-background">
-    <div class="w3-xxlarge" style="padding: 5px">The Northland is where I work, where I live, <br>
+  <!-- <div class="opaque-background" style="background-color: red !important; opacity: 0.4" >
+    <div class="w3-xxlarge" style="padding: 5px">The Northland is where I work, where I live, 
       and where I’m <i>from.</i></div>
-    <!-- <span class="w3-large "><i>Northland is where I work, where I live, and where I’m from.</i></span> -->
+  </div> -->
+  <div class="opaque-background" style="background-color: red !important; opacity: 0.4" >
+    <span class="w3-jumbo w3-hide-small">The Northland is where I work, where I live, and where I’m <i>from.</i></span>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">The Northland is where I work, where I live, and where I’m <i>from.</i></span>
   </div>
     <p><a href="#about" class="w3-button2 w3-button w3-blue2 w3-white w3-padding-large w3-large w3-margin-top" style="filter: none !important;">Meet Maggie!</a></p>
   </div> 
@@ -163,7 +167,7 @@ img {
     As a mom and teacher in this community, I understand our need for candidates who will advocate for our Northland families and communities. <br><br>
     I am the product of great public education in the state of Missouri.  I graduated from Smithville High School, received my bachelor’s degree at 
     Truman State University and my Master’s in Education at the University of Missouri at Kansas City.  After graduating from college, I served in the Peace 
-    Corps in Ecuador for two years, along with my husband Gregg, where our primary focus was on education and public health. <br><br>
+    Corps in Ecuador for two years, along with my husband Gregg, where our primary focus was on education and public health.
     <img src="/magandFam.png" alt="Maggie and family" style="min-width: 442px; max-width: 50%;">
     I am a Spanish teacher a North Kansas City High School, teaching students in the International Baccalaureate Programme.  I previously taught at 
     University Academy in Kansas City, MO for five years. At Northtown, I’ve served as the sponsor of the Young Democrats, coached cross-country and 
