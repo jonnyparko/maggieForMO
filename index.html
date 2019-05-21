@@ -24,6 +24,14 @@ body, html {
   margin-top: 59px;
 }
 
+.bgimg-2 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/jeffcity.jpg");
+  min-height: 1000px;
+  display: flex;
+}
+
 .logo {
   max-width: 126px;
 }
@@ -98,6 +106,13 @@ img {
   }
 }
 
+.quarter-container {
+  background-color: white;
+  opacity: .8;
+  padding-top: 15px !important;
+  height: 330px;
+}
+
 
 </style>
 <body>
@@ -109,9 +124,8 @@ img {
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small2">
       <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-      <a href="#team" class="w3-bar-item w3-button"> ISSUES</a>
-      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> ENDORSEMENTS</a>
-      <a href="https://secure.actblue.com/" class="w3-bar-item w3-button" target="_blank"><i class="fa fa-usd"></i> DONATE</a>
+      <a href="#issues" class="w3-bar-item w3-button"> ISSUES</a>
+      <a href="#donate" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> DONATE</a>
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
@@ -126,9 +140,9 @@ img {
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left hide-medium2 w3-hide-large" style="display:none; background-color: #2759a9!important" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">ISSUES</a>
-  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">ENDORSEMENTS</a>
-  <a href="https://secure.actblue.com/" onclick="w3_close()" class="w3-bar-item w3-button" target="_blank">DONATE</a>
+  <a href="#issues" onclick="w3_close()" class="w3-bar-item w3-button">ISSUES</a>
+  <a href="#donate" onclick="w3_close()" class="w3-bar-item w3-button">DONATE</a>
+  <!-- <a href="https://secure.actblue.com/" onclick="w3_close()" class="w3-bar-item w3-button" target="_blank">DONATE</a> -->
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
 </nav>
 
@@ -180,14 +194,15 @@ img {
   </p>
 </div>
 
-<!-- Team Section -->
-<div class="w3-container w3-light-grey" style="padding: 80px 16px" id="team">
-    <h3 class="w3-center">Issues</h3>
-  <p class="w3-center w3-large"><i>My fight is our fight.</i><br>
+<!-- issues Section -->
+<div class="w3-container bgimg-2" style="padding: 80px 16px" id="issues">
+  <div style="margin: auto; opacity: .8; background-color: white; max-width: 1500px;">
+    <h3 class="w3-center w3-white">Issues</h3>
+  <p class="w3-center w3-large w3-white" style="margin: auto; opacity: .8;"><i>My fight is our fight.</i><br>
     I am running for state representative to fight for workers’ rights, affordable healthcare, well-funded public education and a strong infrastructure.
   </p>
-  <div class="w3-row-padding w3-center" style="margin-top:64px">
-    <div class="w3-quarter">
+  <div class="w3-row-padding w3-center">
+    <div class="w3-quarter ">
       <i class="fa fa-heartbeat w3-margin-bottom w3-jumbo w3-center icons"></i>
       <p class="w3-large">Health Care</p>
       <p>I believe healthcare is a right for all and not a privilege. I will advocate for affordable healthcare for people in all stages of life.</p>
@@ -202,33 +217,30 @@ img {
       <p class="w3-large">Education</p>
       <p>We have great public schools in the Northland but I want to ensure that kids all over the state have access to high-quality public schools.  I strongly oppose the expansion of charter schools outside of the boundaries of Kansas City and St. Louis.</p>
     </div>
-    <div class="w3-quarter">
+    <div class="w3-quarter ">
       <i class="fa fa-cog w3-margin-bottom w3-jumbo icons"></i>
       <p class="w3-large">Infrastructure</p>
       <p>As a member of this community, I see every day the need for good, safe roads and bridges. We need to make sure our neighborhood streets have sidewalks, so kids can walk to school, and folks can get to work and do their shopping.</p>
     </div>
   </div>
 </div>
+</div>
 
 
 <!-- Promo Section "Statistics" -->
-<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64" id="work" style="background-color: #2759a9!important;">
-    <h3 class="w3-center">Endorsements</h3>
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64" id="donate" style="background-color: #2759a9!important;">
+    <h3 class="w3-center">Donate</h3>
   <div class="w3-quarter">
-    <span class="w3-xxlarge">14+</span>
-    <br>Partners
+    <span class="w3-xxlarge">$5</span>
   </div>
   <div class="w3-quarter">
-    <span class="w3-xxlarge">55+</span>
-    <br>Projects Done
+    <span class="w3-xxlarge">$10</span>
   </div>
   <div class="w3-quarter">
-    <span class="w3-xxlarge">89+</span>
-    <br>Happy Clients
+    <span class="w3-xxlarge">$15</span>
   </div>
   <div class="w3-quarter">
-    <span class="w3-xxlarge">150+</span>
-    <br>Meetings
+    <span class="w3-xxlarge">$20</span>
   </div>
 </div>
 
@@ -280,7 +292,7 @@ img {
       </p>
     </form>
     <!-- Image of location/map -->
-    <img src="/jeffcity.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
+    <!-- <img src="/jeffcity.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px"> -->
   </div>
 </div>
 
@@ -299,7 +311,7 @@ img {
     <i>Paid for by Maggie for Missouri, Trent Skaggs, Treasurer<br>
       Copyright © 2019 Maggie Nurrenbern for Missouri, All rights reserved.<br>
     </i><br>
-    Created by <a href="https://jonnyparko.github.io/Jonathan-Parker/" title="Jonathan Parker" target="_blank" class="w3-hover-text-green">jonnparko.github.io</a>
+    Created by <a href="https://jonnyparko.github.io/Jonathan-Parker/" title="Jonathan Parker" target="_blank" class="w3-hover-text-green">jonnyparko.github.io</a>
   </p>
 </footer>
  
