@@ -106,6 +106,12 @@ img {
   }
 }
 
+@media (min-width: 601px) {
+  .w3-col.m3, .w3-quarter {
+      width: 19.9999999999% !important;
+  }
+}
+
 .quarter-container {
   background-color: white;
   opacity: .8;
@@ -119,10 +125,10 @@ img {
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar w3-blue w3-card" id="myNavbar">
+  <div class="w3-bar w3-blue w3-card" id="myNavbar" style="display: flex;">
     <a href="#home" class="w3-bar-item w3-button w3-wide" style="padding: 0px !important"><img src="/maggieLogo.jpg" class="logo"></a>
     <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small2">
+    <div class="w3-hide-small2" style="margin: auto; max-width: 100%;">
       <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
       <a href="#issues" class="w3-bar-item w3-button"> ISSUES</a>
       <a href="#donate" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> DONATE</a>
@@ -130,7 +136,7 @@ img {
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large2" onclick="w3_open()">
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hide-large2" onclick="w3_open()" style="margin-left: auto;">
       <i class="fa fa-bars"></i>
     </a>
   </div>
@@ -177,13 +183,13 @@ img {
 
 <!-- About Section -->
 <div class="w3-container" style="padding: 80px 16px" id="about">
-  <h3 class="w3-center">ABOUT MAGGIE</h3>
+  <h3 class="w3-center">ABOUT ME</h3>
    <p class="w3-center w3-large" style="margin: auto; text-align: unset !important; max-width: 1000px;">
     As a mom and teacher in this community, I understand our need for candidates who will advocate for our Northland families and communities. <br><br>
     I am the product of great public education in the state of Missouri.  I graduated from Smithville High School, received my bachelor’s degree at 
     Truman State University and my Master’s in Education at the University of Missouri at Kansas City.  After graduating from college, I served in the Peace 
     Corps in Ecuador for two years, along with my husband Gregg, where our primary focus was on education and public health.
-    <img src="/magandFam.png" alt="Maggie and family" style="max-width: 60%; float: left; margin: 10px;">
+    <img src="/bio.jpg" alt="Maggie and family" style="max-width: 60%; float: left; margin: 10px;">
     I am a Spanish teacher a North Kansas City High School, teaching students in the International Baccalaureate Programme.  I previously taught at 
     University Academy in Kansas City, MO for five years. At Northtown, I’ve served as the sponsor of the Young Democrats, coached cross-country and 
     served as the building representative for the National Education Association (NEA).<br><br>
@@ -219,8 +225,13 @@ img {
     </div>
     <div class="w3-quarter ">
       <i class="fa fa-cog w3-margin-bottom w3-jumbo icons"></i>
-      <p class="w3-large">Infrastructure</p>
+      <p class="w3-large">Economic Growth</p>
       <p>As a member of this community, I see every day the need for good, safe roads and bridges. We need to make sure our neighborhood streets have sidewalks, so kids can walk to school, and folks can get to work and do their shopping.</p>
+    </div>
+    <div class="w3-quarter ">
+      <i class="fa fa-gavel w3-margin-bottom w3-jumbo icons"></i>
+      <p class="w3-large">Civil Justice</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
     </div>
   </div>
 </div>
