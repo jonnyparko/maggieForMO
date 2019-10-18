@@ -96,7 +96,7 @@ img {
   line-height: 70px;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 828px) {
   .w3-hide-small2 {
       display: none!important;
   }
@@ -108,7 +108,7 @@ img {
   }
 }
 
-@media (min-width: 721px) {
+@media (min-width: 829px) {
   .w3-hide-large2 {
       display: none!important;
   }
@@ -165,6 +165,15 @@ img {
   z-index: 1;
 }
 
+.donate-link {
+  color: red; 
+  text-decoration: underline;
+}
+
+.donate-link:hover {
+  color: blue !important;
+}
+
 /* .twitter-timeline {
   height: 500px !important;
   max-width: 50% !important;
@@ -180,15 +189,14 @@ img {
     <a href="#home" class="w3-bar-item w3-button w3-wide" style="padding: 0px !important"><img src="/maggieLogo.jpg" class="logo"></a>
     <!-- Right-sided navbar links -->
     <div class="w3-hide-small2" style="margin: auto; max-width: 100%;">
-      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-      <a href="#issues" class="w3-bar-item w3-button"> ISSUES</a>
-      <a href="#donate" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> DONATE</a>
+      <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="issues.html" class="w3-bar-item w3-button"> ISSUES</a>
       <a href="#getInvolved" class="w3-bar-item w3-button"> GET INVOLVED</a>
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+      <a href="https://twitter.com/search?q=%23maggieformo&src=typd&lang=en" target="_blank" class="w3-bar-item w3-button">#MAGGIEFORMO</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-    <a href="https://twitter.com/search?q=%23maggieformo&src=typd&lang=en" target="_blank" class="w3-bar-item w3-button">#MAGGIEFORMO</a>
-
+    <a href="https://secure.actblue.com/donate/maggieformo?refcode=online&amount=50" class="w3-bar-item w3-button donate-link" target="_blank"><i class="fa fa-usd"></i><b> DONATE</b></a>
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hide-large2" onclick="w3_open()" style="margin-left: auto;">
       <i class="fa fa-bars"></i>
     </a>
@@ -198,9 +206,9 @@ img {
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left hide-medium2 w3-hide-large" style="display:none; background-color: #2759a9!important" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="#issues" onclick="w3_close()" class="w3-bar-item w3-button">ISSUES</a>
-  <a href="#donate" onclick="w3_close()" class="w3-bar-item w3-button">DONATE</a>
+  <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="issues.html" onclick="w3_close()" class="w3-bar-item w3-button">ISSUES</a>
+  <a href="https://secure.actblue.com/donate/maggieformo?refcode=online&amount=50" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button">DONATE</a>
   <a href="#getInvolved" onclick="w3_close()" class="w3-bar-item w3-button">GET INVOLVED</a>
   <!-- <a href="https://secure.actblue.com/" onclick="w3_close()" class="w3-bar-item w3-button" target="_blank">DONATE</a> -->
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
@@ -237,126 +245,23 @@ img {
   </div>
 </header>
 
-<!-- About Section -->
-<div class="w3-container" style="padding: 25px 16px" id="about">
-  <h2 class="w3-center">ABOUT MAGGIE</h2>
-   <p class="w3-center w3-large" style="background-color: #2759a9!important; color: #fff; opacity: .7 !important;">
-  	 <b>"I’m running for state representative to fight for public education and advocate for affordable healthcare, to defend our workers’ rights, and to secure funding to fix our crumbling infrastructure."</b>
-     <br>
-   </p>
-   <p class="w3-center w3-large" style="margin: auto; text-align: justify !important; max-width: 1000px;">
-    Maggie Nurrenbern is from the Northland, works in the Northland and has always been proud to call the Northland home. As a mom, a teacher, and a union member, Maggie understands well that we need legislators who will advocate for our hardworking families.<br><br>
-    <img src="GV3A3115 2 - About section.jpg" alt="Maggie" style="max-width: 38%; float: left; margin: 10px;">
-    Maggie is the product of great public education in the state of Missouri.  She graduated from Smithville High School, received her bachelor’s degree at Truman State University and her Master’s in Education at UMKC.  After graduating college, she served with her husband Gregg in the Peace Corps in Ecuador for two years working in education and public health.</b> <br><br>
-    She is a Spanish teacher a North Kansas City High School, teaching students in the International Baccalaureate Programme.  She previously taught at University Academy in Kansas City, MO for five years. At Northtown, she’s served as the sponsor of the Young Democrats, coached cross country and served as the building representative for the NEA (National Education Association). <br><br>
-    Maggie and her husband Gregg have three sons, Luke, Eli and Henry.  Maggie says that being a mom is her greatest job of all and her kids have given her a renewed purpose to advocate for bright futures for kids all over Missouri.<br><br>  
-    Maggie has a lot of experience with activism in the state of Missouri. She served as an intern in the Missouri Senate and understands the importance of compromise and working across the aisle. <br><br>
-    She’s worked hard to campaign for Democratic candidates and get important initiatives on the ballot, which Missourians have overwhelming approved. She’s been an active member of Northland Progress, formerly serving on the board and various committees. Last year, Maggie coordinated voter registrations drives at 7 high schools in the Northland, which registered nearly 500 seniors to vote! In addition to her political activism, Maggie currently serves as the treasurer of the Oakwood Community Association. She and her family are parishioners at St. Charles Borromeo Catholic Church. <br><br>
-  </p>
-</div>
-<div class="w3-container" style="padding: 25px 16px">
-  <div class="bgimg-3" style="max-width: 1000px; max-height: 900px; text-align: center; padding: 15px; margin: auto !important;">
-    <div class="w3-text-white" style="padding: 23 16px;  display: flex;  margin: auto;">
-    <div class="opaque-background" style="background-color: #2759a9 !important; opacity: 0.7 !important; max-width: 1490px; padding: 15px">
-      <span class="w3-xlarge w3-hide-small">“My students and my own children have shown me how we desperately need legislators who will fight for bright futures for all of our kids across Missouri.”</span>
-      <span class="w3-xlarge w3-hide-large w3-hide-medium">“My students and my own children have shown me how we desperately need legislators who will fight for bright futures for all of our kids across Missouri.”</span>
-    </div>
-    </div>
-  </div>
-</div>
-
-<!-- issues Section -->
-<div class="w3-container bgimg-2" style="padding: 80px 16px" id="issues">
-  <div style="margin: auto; opacity: .8; background-color: white; max-width: 1500px; min-height: 950px;">
-    <h2 class="w3-center w3-white">ISSUES</h2>
-    <p class="w3-center w3-large" style="background-color: #2759a9; color: #fff; opacity: .9;">
-        <b>"It's time to work together to find common sense solutions for all Missourians - not just the elite few."</b><br>
-    </p>
-      
-<div class="w3-content w3-display-container" style="text-align: center;">
-    <button class="w3-button w3-blue arrow" onclick="plusDivs(-1)">&#10094;</button>
-    <button class="w3-button w3-blue arrow" onclick="plusDivs(1)">&#10095;</button>
-        <div class="mySlides">
-          <i class="fa fa-heartbeat w3-margin-bottom w3-jumbo w3-center icons"></i>
-          <p class="w3-large">Health Care</p>
-          <p style="text-align: justify; padding: 15px;" class="w3-center w3-large">
-              I believe healthcare is a right for all and not a privilege. All people in all stages of life deserve quality, affordable healthcare. High healthcare costs have become such a strain for so many Missourians.
-
-              Missouri must expand Medicaid.  We have too many Missourians who are uninsured or underinsured. <mark>Medicaid expansion would provide more affordable health care to those who fall between the gaps, saving taxpayers money and lowering healthcare premiums for all. </mark><br><br>
-              
-               My husband is a nurse practitioner with Samuel Rodgers Health Center and he provides primary health care services for many uninsured and underinsured patients at their Clay County clinic. We know it’s so important for patients to have access to regular basic health care, and prevent unnecessary trips to the emergency rooms.  When patients don’t receive this care, we all share the burden through higher insurance premiums. <br><br>
-              
-              As a state, we must also address how high healthcare costs are impacting economic growth. There are far too many individuals who want to start their own small business, but are forced to stay at their current job to have health insurance. As state representative, fighting for quality, affordable healthcare will be one of my top priorities. 
-              
-          </p>
-        </div> 
-          <div class="mySlides">
-              <i class="fa fa-graduation-cap w3-margin-bottom w3-jumbo icons"></i>
-              <p class="w3-large">Education</p>
-              <p style="text-align: justify; padding: 15px;" class="w3-center w3-large">
-
-As a teacher at North Kansas City High School, I see every day how great public education truly has the power to transform lives and open doors for students.  NKCHS is the most diverse high school in the state, and it is an incredible privilege to see students of every race, nationality and socioeconomic background embrace the opportunities provided to them.  Whether it be through rigorous courses offered through the International Baccalaureate Programme, AP classes or dual-credit classes through Metropolitan Community Colleges or technical programs offered through Northland Center for Advanced Professional Students (NCAPS) or Northland Career Center, our students are more prepared than ever to enter college or the workforce.<br><br> 
-
-In recent years, we’ve had to battle the Republican supermajority in the Missouri Legislature to fully fund our public schools. <b>Fully funding our public schools is not only a constitutional requirement, but also a moral obligation.</b>We have too many politicians who are constantly pushing legislation that is bad for public education.  As an educator in the Missouri House, I will stand up for our public schools and teachers to ensure they can provide quality education for each and every student. <br><br>
-
-Having taught at a University Academy, a high performing charter school in Kansas City, I understand the push for the expansion of charters schools. While we do have some high performing charter schools, the reality is that many fail and students have suffered as they’ve been forced to move between struggling schools.  Here in the Northland, our public schools are pillars of our communities. I strongly oppose the expansion of charter schools outside of  the boundaries of the Kansas City and St. Louis school districts.    Opening our districts to charter schools would greatly hurt their funding and their ability to best serve all students. <br><br>
-
-<mark>We need to make sure schools across our state have the funding to provide quality education from early education to post-secondary.  We must end the cuts to education and invest in our students.</mark>  Investing in our students is an investment in our state, as we ensure students have the skills needed to enter the workforce. 
-
-              </p>
-            </div>
-            <div class="mySlides">
-                <i class="fa fa-cog w3-margin-bottom w3-jumbo icons"></i>
-                <p class="w3-large">Economic Growth</p>
-                <p style="text-align: justify; padding: 15px;" class="w3-center w3-large">
-                    As we make our daily commutes and travel across our state, there is nothing more important than our safety and security.  Missouri’s aging infrastructure is not only putting our families at risk, but it’s also preventing economic growth. <br><br>
-
-                  <mark>We must invest in good safe roads and bridges, while creating jobs.</mark>  We need to make sure our neighborhood streets have sidewalks, so kids can walk safely to school, and folks can get to work and do their shopping. <br><br>
-                    
-                    As a union member, I understand well what it means to be have our workers’ rights constantly under attack. I strongly opposed Prop A and worked to make sure that Right to Work was defeated.  We know workers in Right to Work states have lower incomes and fewer benefits and it is wrong for Missouri. <br><br>
-                    
-                    I supported raising the minimum wage and worked to gather signatures to place it on the ballot, which Missourians overwhelming approved.  We know that more money in the hands of hardworking Missouri goes right back into our community, benefiting all of us. <br><br>
-                    
-                    Gladstone is an incredible community to raise a family.  From the beautiful the downtown development to the community center and renovated Antioch Library, we see the benefits of healthy economic development. We must continue to support and encourage the development of new businesses, services and innovations. <br><br>
-                    
-                    
-                    There is unbelievable potential for economic development as we push towards energy independence in this state.  We recently moved our household to solar energy and we’re thrilled to see the creation of new jobs, as more homes and businesses switch to solar, allowing customers to save on electric bills.  <mark>As a state, we must embrace policies that encourage alternative and sustainable energy sources and protect Missouri’s natural beauty.</mark> 
-                    
-                </p>
-              </div>
-              <div class="mySlides">
-                <i class="fa fa-gavel w3-margin-bottom w3-jumbo icons"></i>
-                <p class="w3-large">Civil Justice</p>
-                <p style="text-align: justify; padding: 15px;" class="w3-center w3-large">
-                    Despite Missouri’s constitutional protections, there are powerful business interests and lobbyists working hard to restrict access to the civil justice system. <mark>I strongly believe that everyday Missourians are entitled to a level playing field in our court system, regardless of wealth, gender, race or religion.</mark> <br><br>
- 
-                    As the daughter of two attorneys, I’ve seen firsthand how important it is is that our courts are open to each and every person.  As State Representative, I will fight to make sure the civil justice rights of Missourians are protected. 
-                </p>
-              </div>
-</div>
-
-
-  </div>
-</div>
-</div>
-
-
 <!-- DONATE SECTION -->
 <div class="w3-container w3-row w3-center w3-padding-64" id="donate">
+  <hr>
     <h2 class="w3-center">DONATE</h2>
 	<p class="w3-center w3-large" style=" background-color: #2759a9!important; color: #fff; opacity: .7;">
 	 <b>"As State Representative, I will work to protect the people I represent and not special interest groups."</b></p>
   <div class="w3-fifth">
-    <span class="w3-xxlarge"><a href="https://secure.actblue.com/donate/maggie-nurrenbern-for-missouri-1#?amount=25" target="_blank" class="w3-bar-item w3-button" style="color: #2759a9">$25</a></span>
+    <span class="w3-xxlarge"><a href="https://secure.actblue.com/donate/maggieformo?refcode=online&amount=25" target="_blank" class="w3-bar-item w3-button" style="color: #2759a9">$25</a></span>
   </div>
   <div class="w3-fifth">
-    <span class="w3-xxlarge"><a href="https://secure.actblue.com/donate/maggie-nurrenbern-for-missouri-1#?amount=50" target="_blank" class="w3-bar-item w3-button" style="color: #2759a9">$50</a></span>
+    <span class="w3-xxlarge"><a href="https://secure.actblue.com/donate/maggieformo?refcode=online&amount=50" target="_blank" class="w3-bar-item w3-button" style="color: #2759a9">$50</a></span>
   </div>
   <div class="w3-fifth">
-    <span class="w3-xxlarge"><a href="https://secure.actblue.com/donate/maggie-nurrenbern-for-missouri-1#?amount=100" target="_blank" class="w3-bar-item w3-button" style="color: #2759a9">$100</a></span>
+    <span class="w3-xxlarge"><a href="https://secure.actblue.com/donate/maggieformo?refcode=online&amount=100" target="_blank" class="w3-bar-item w3-button" style="color: #2759a9">$100</a></span>
   </div>
   <div class="w3-fifth">
-    <span class="w3-xxlarge"><a href="https://secure.actblue.com/donate/maggie-nurrenbern-for-missouri-1#?amount=200" target="_blank" class="w3-bar-item w3-button" style="color: #2759a9">$200</a></span>
+    <span class="w3-xxlarge"><a href="https://secure.actblue.com/donate/maggieformo?refcode=online&amount=250" target="_blank" class="w3-bar-item w3-button" style="color: #2759a9">$250</a></span>
   </div>
   <div class="w3-fifth">
     <span class="w3-xxlarge"><a href="https://secure.actblue.com/donate/maggie-nurrenbern-for-missouri-1#" target="_blank" class="w3-bar-item w3-button" style="color: #2759a9">Other</a></span>
@@ -388,6 +293,7 @@ Having taught at a University Academy, a high performing charter school in Kansa
     <p style="max-width: 500px; margin: auto;"><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
     <p style="max-width: 500px; margin: auto;"><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
     <p style="max-width: 500px; margin: auto;"><input class="w3-input w3-border" type="text" placeholder="Telephone" required name="Telephone"></p>
+    <p style="max-width: 500px; margin: auto;"><input class="w3-input w3-border" type="text" placeholder="Address" required name="Address"></p>
     <p>
       <button class="w3-button" type="submit" style="background-color: white; color: #2759a9;">
         <i class="fa fa-paper-plane"></i> SUBMIT
@@ -406,7 +312,6 @@ Having taught at a University Academy, a high performing charter school in Kansa
                                 Maggie@MaggieforMO.com <br>
                                 (816) 289-8822
   </p>
-  <p class="w3-center w3-large">Want to chat? Send me a message:</p>
   <div style="margin-top:48px">
     <!-- <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right icons"> </i> Email: maggie@maggieformo.com</p> -->
     <form action="https://formspree.io/maggieformo@gmail.com" method="POST">
@@ -423,7 +328,7 @@ Having taught at a University Academy, a high performing charter school in Kansa
     <a class="twitter-timeline" href="https://twitter.com/MaggieforMO?ref_src=twsrc%5Etfw"   data-width="500"
     data-height="500">Tweets by MaggieforMO</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><br>
     <a href="https://twitter.com/MaggieforMO?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @MaggieforMO</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    <img src="MaggieforMO.png" alt="Maggie for MO" style="max-width: 80%; float: center;">
+    <img src="MaggieforMO.png" alt="Maggie for MO" style="max-width: 40%; float: center;">
     <!-- <img src="/jeffcity.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px"> -->
   </div>
 </div>
@@ -436,10 +341,14 @@ Having taught at a University Academy, a high performing charter school in Kansa
       <a href="https://twitter.com/MaggieforMO?lang=en" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
   </div>
   <p>
-    <i>Maggie Nurrenbern for Missouri<br>
-      Paid for by Maggie Nurrenbern for Missouri, Trent Skaggs, Treasurer<br>
+    Maggie Nurrenbern for Missouri<br>
+    <i> Paid for by Maggie Nurrenbern for Missouri, Trent Skaggs, Treasurer<br>
       Copyright © 2019 Maggie Nurrenbern for Missouri, All rights reserved.<br>
-    </i><br>
+    </i>
+    <a href="https://www.google.com/maps/search/P.O.+Box+46908+Gladstone,+MO+64188/@39.2039124,-94.6006953,13z/data=!3m1!4b1" target="_blank">
+      P.O. Box 46908 <br>
+    Gladstone, MO 64188 </a><br>
+    <a href="tel:816-289-8822" target="_blank">(816) 289-8822 </a><br><br>
     Created by <a href="https://jonnyparko.github.io/Jonathan-Parker/" title="Jonathan Parker" target="_blank" class="w3-hover-text-green">Method.</a>
   </p>
 </footer>
