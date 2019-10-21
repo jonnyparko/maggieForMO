@@ -174,6 +174,32 @@ img {
   color: blue !important;
 }
 
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  top: 50%;
+  width: 100%;
+  margin-top: -30px;
+  padding: 20px;
+  color: #2759a9;
+  font-weight: bold;
+  font-size: 50px;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+
 /* .twitter-timeline {
   height: 500px !important;
   max-width: 50% !important;
@@ -182,6 +208,36 @@ img {
 </style>
 
 <body>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-blue w3-card" id="myNavbar" style="display: flex;">
@@ -204,7 +260,7 @@ img {
 </div>
 
 <!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left hide-medium2 w3-hide-large" style="display:none; background-color: #2759a9!important; opacity: 0.9;" id="mySidebar">
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left hide-medium2 w3-hide-large" style="display:none; background-color: #2759a9!important; opacity: 0.9" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
   <A href="index.html#home" onclick="w3-close()" class="w3-bar-item w3-button">HOME</a>
   <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
@@ -220,76 +276,83 @@ img {
   <a class="w3-button" style="background-color: red; color: white; border-radius: 5px;" href="https://secure.actblue.com/donate/maggieformo?refcode=online&amount=50" target="_blank"> Donate Now!</a>
 </div>
 
-<!-- issues Section -->
+<!-- ISSUES -->
 <div class="w3-container bgimg-2" style="padding: 70px 16px" id="issues">
-  <div style="margin: auto; opacity: .8; background-color: white; max-width: 1500px; min-height: 950px;">
-    <h2 class="w3-center w3-white">ISSUES</h2>
-    <p class="w3-center w3-large" style="background-color: #2759a9; color: #fff; opacity: 0.9;">
-        <b>"It's time to work together to find common sense solutions for all Missourians - not just the elite few."</b><br>
-    </p>
-      
-<div class="w3-content w3-display-container" style="text-align: center;">
-    <button class="w3-button w3-blue arrow" onclick="plusDivs(-1)">&#10094;</button>
-    <button class="w3-button w3-blue arrow" onclick="plusDivs(1)">&#10095;</button>
-        <div class="mySlides">
-          <i class="fa fa-heartbeat w3-margin-bottom w3-jumbo w3-center icons"></i>
-          <p class="w3-large">Health Care</p>
-          <p style="text-align: justify; padding: 15px;" class="w3-center w3-large">
-              I believe healthcare is a right for all and not a privilege. All people in all stages of life deserve quality, affordable healthcare. High healthcare costs have become such a strain for so many Missourians.
-
-              Missouri must expand Medicaid.  We have too many Missourians who are uninsured or underinsured. <mark>Medicaid expansion would provide more affordable health care to those who fall between the gaps, saving taxpayers money and lowering healthcare premiums for all. </mark><br><br>
-              
-               My husband is a nurse practitioner with Samuel Rodgers Health Center and he provides primary health care services for many uninsured and underinsured patients at their Clay County clinic. We know it’s so important for patients to have access to regular basic health care, and prevent unnecessary trips to the emergency rooms.  When patients don’t receive this care, we all share the burden through higher insurance premiums. <br><br>
-              
-              As a state, we must also address how high healthcare costs are impacting economic growth. There are far too many individuals who want to start their own small business, but are forced to stay at their current job to have health insurance. As state representative, fighting for quality, affordable healthcare will be one of my top priorities. 
-              
-          </p>
-        </div> 
+    <div style="margin: auto; opacity: .8; background-color: white; max-width: 1500px; min-height: 950px;">
+      <h2 class="w3-center w3-white">ISSUES</h2>
+      <p class="w3-center w3-large" style="background-color: #2759a9; color: #fff; opacity: 0.9;">
+          <b>"It's time to work together to find common sense solutions for all Missourians - not just the elite few."</b><br>
+      </p>
+        
+  <div class="w3-content w3-display-container" style="text-align: center;">
           <div class="mySlides">
-              <i class="fa fa-graduation-cap w3-margin-bottom w3-jumbo icons"></i>
-              <p class="w3-large">Education</p>
-              <p style="text-align: justify; padding: 15px;" class="w3-center w3-large">
-
-As a teacher at North Kansas City High School, I see every day how great public education truly has the power to transform lives and open doors for students.  NKCHS is the most diverse high school in the state, and it is an incredible privilege to see students of every race, nationality and socioeconomic background embrace the opportunities provided to them.  Whether it be through rigorous courses offered through the International Baccalaureate Programme, AP classes or dual-credit classes through Metropolitan Community Colleges or technical programs offered through Northland Center for Advanced Professional Students (NCAPS) or Northland Career Center, our students are more prepared than ever to enter college or the workforce.<br><br> 
-
-In recent years, we’ve had to battle the Republican supermajority in the Missouri Legislature to fully fund our public schools. <b>Fully funding our public schools is not only a constitutional requirement, but also a moral obligation.</b>We have too many politicians who are constantly pushing legislation that is bad for public education.  As an educator in the Missouri House, I will stand up for our public schools and teachers to ensure they can provide quality education for each and every student. <br><br>
-
-Having taught at a University Academy, a high performing charter school in Kansas City, I understand the push for the expansion of charters schools. While we do have some high performing charter schools, the reality is that many fail and students have suffered as they’ve been forced to move between struggling schools.  Here in the Northland, our public schools are pillars of our communities. I strongly oppose the expansion of charter schools outside of  the boundaries of the Kansas City and St. Louis school districts.    Opening our districts to charter schools would greatly hurt their funding and their ability to best serve all students. <br><br>
-
-<mark>We need to make sure schools across our state have the funding to provide quality education from early education to post-secondary.  We must end the cuts to education and invest in our students.</mark>  Investing in our students is an investment in our state, as we ensure students have the skills needed to enter the workforce. 
-
-              </p>
-            </div>
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <i class="fa fa-heartbeat w3-margin-bottom w3-jumbo w3-center icons"></i>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <p class="w3-large">Health Care</p>
+            <p style="text-align: justify; padding: 15px;" class="w3-center w3-large">
+                I believe healthcare is a right for all and not a privilege. All people in all stages of life deserve quality, affordable healthcare. High healthcare costs have become such a strain for so many Missourians.
+  
+                Missouri must expand Medicaid.  We have too many Missourians who are uninsured or underinsured. <mark>Medicaid expansion would provide more affordable health care to those who fall between the gaps, saving taxpayers money and lowering healthcare premiums for all. </mark><br><br>
+                
+                 My husband is a nurse practitioner with Samuel Rodgers Health Center and he provides primary health care services for many uninsured and underinsured patients at their Clay County clinic. We know it’s so important for patients to have access to regular basic health care, and prevent unnecessary trips to the emergency rooms.  When patients don’t receive this care, we all share the burden through higher insurance premiums. <br><br>
+                
+                As a state, we must also address how high healthcare costs are impacting economic growth. There are far too many individuals who want to start their own small business, but are forced to stay at their current job to have health insurance. As state representative, fighting for quality, affordable healthcare will be one of my top priorities. 
+                
+            </p>
+          </div> 
             <div class="mySlides">
-                <i class="fa fa-cog w3-margin-bottom w3-jumbo icons"></i>
-                <p class="w3-large">Economic Growth</p>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <i class="fa fa-graduation-cap w3-margin-bottom w3-jumbo icons"></i>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <p class="w3-large">Education</p>
                 <p style="text-align: justify; padding: 15px;" class="w3-center w3-large">
-                    As we make our daily commutes and travel across our state, there is nothing more important than our safety and security.  Missouri’s aging infrastructure is not only putting our families at risk, but it’s also preventing economic growth. <mark>We must invest in good safe roads and bridges, while creating jobs.</mark>  We need to make sure our neighborhood streets have sidewalks, so kids can walk safely to school, and folks can get to work and do their shopping. <br><br>
-                    
-                    As a union member, I understand well what it means to be have our workers’ rights constantly under attack. I strongly opposed Prop A and worked to make sure that Right to Work was defeated.  We know workers in Right to Work states have lower incomes and fewer benefits and it is wrong for Missouri. I supported raising the minimum wage and worked to gather signatures to place it on the ballot, which Missourians overwhelming approved.  We know that more money in the hands of hardworking Missouri goes right back into our community, benefiting all of us. <br><br>
-                    
-                    Gladstone is an incredible community to raise a family.  From the beautiful the downtown development to the community center and renovated Antioch Library, we see the benefits of healthy economic development. We must continue to support and encourage the development of new businesses, services and innovations. <br><br>
-                    
-                    
-                    There is unbelievable potential for economic development as we push towards energy independence in this state.  We recently moved our household to solar energy and we’re thrilled to see the creation of new jobs, as more homes and businesses switch to solar, allowing customers to save on electric bills.  <mark>As a state, we must embrace policies that encourage alternative and sustainable energy sources and protect Missouri’s natural beauty.</mark> 
-                    
+  
+  As a teacher at North Kansas City High School, I see every day how great public education truly has the power to transform lives and open doors for students.  NKCHS is the most diverse high school in the state, and it is an incredible privilege to see students of every race, nationality and socioeconomic background embrace the opportunities provided to them.  Whether it be through rigorous courses offered through the International Baccalaureate Programme, AP classes or dual-credit classes through Metropolitan Community Colleges or technical programs offered through Northland Center for Advanced Professional Students (NCAPS) or Northland Career Center, our students are more prepared than ever to enter college or the workforce.<br><br> 
+  
+  In recent years, we’ve had to battle the Republican supermajority in the Missouri Legislature to fully fund our public schools. <b>Fully funding our public schools is not only a constitutional requirement, but also a moral obligation.</b>We have too many politicians who are constantly pushing legislation that is bad for public education.  As an educator in the Missouri House, I will stand up for our public schools and teachers to ensure they can provide quality education for each and every student. <br><br>
+  
+  Having taught at a University Academy, a high performing charter school in Kansas City, I understand the push for the expansion of charters schools. While we do have some high performing charter schools, the reality is that many fail and students have suffered as they’ve been forced to move between struggling schools.  Here in the Northland, our public schools are pillars of our communities. I strongly oppose the expansion of charter schools outside of  the boundaries of the Kansas City and St. Louis school districts.    Opening our districts to charter schools would greatly hurt their funding and their ability to best serve all students. <br><br>
+  
+  <mark>We need to make sure schools across our state have the funding to provide quality education from early education to post-secondary.  We must end the cuts to education and invest in our students.</mark>  Investing in our students is an investment in our state, as we ensure students have the skills needed to enter the workforce. 
+  
                 </p>
               </div>
               <div class="mySlides">
-                <i class="fa fa-gavel w3-margin-bottom w3-jumbo icons"></i>
-                <p class="w3-large">Civil Justice</p>
-                <p style="text-align: justify; padding: 15px;" class="w3-center w3-large">
-                    Despite Missouri’s constitutional protections, there are powerful business interests and lobbyists working hard to restrict access to the civil justice system. <mark>I strongly believe that everyday Missourians are entitled to a level playing field in our court system, regardless of wealth, gender, race or religion.</mark> <br><br>
- 
-                    As the daughter of two attorneys, I’ve seen firsthand how important it is is that our courts are open to each and every person.  As State Representative, I will fight to make sure the civil justice rights of Missourians are protected. 
-                </p>
-              </div>
-</div>
-
-
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <i class="fa fa-cog w3-margin-bottom w3-jumbo icons"></i>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  <p class="w3-large">Economic Growth</p>
+                  <p style="text-align: justify; padding: 15px;" class="w3-center w3-large">
+                      As we make our daily commutes and travel across our state, there is nothing more important than our safety and security.  Missouri’s aging infrastructure is not only putting our families at risk, but it’s also preventing economic growth. <mark>We must invest in good safe roads and bridges, while creating jobs.</mark>  We need to make sure our neighborhood streets have sidewalks, so kids can walk safely to school, and folks can get to work and do their shopping. <br><br>
+                      
+                      As a union member, I understand well what it means to be have our workers’ rights constantly under attack. I strongly opposed Prop A and worked to make sure that Right to Work was defeated.  We know workers in Right to Work states have lower incomes and fewer benefits and it is wrong for Missouri. I supported raising the minimum wage and worked to gather signatures to place it on the ballot, which Missourians overwhelming approved.  We know that more money in the hands of hardworking Missouri goes right back into our community, benefiting all of us. <br><br>
+                      
+                      Gladstone is an incredible community to raise a family.  From the beautiful the downtown development to the community center and renovated Antioch Library, we see the benefits of healthy economic development. We must continue to support and encourage the development of new businesses, services and innovations. <br><br>
+                      
+                      
+                      There is unbelievable potential for economic development as we push towards energy independence in this state.  We recently moved our household to solar energy and we’re thrilled to see the creation of new jobs, as more homes and businesses switch to solar, allowing customers to save on electric bills.  <mark>As a state, we must embrace policies that encourage alternative and sustainable energy sources and protect Missouri’s natural beauty.</mark> 
+                      
+                  </p>
+                </div>
+                <div class="mySlides">
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <i class="fa fa-gavel w3-margin-bottom w3-jumbo icons"></i>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  <p class="w3-large">Civil Justice</p>
+                  <p style="text-align: justify; padding: 15px;" class="w3-center w3-large">
+                      Despite Missouri’s constitutional protections, there are powerful business interests and lobbyists working hard to restrict access to the civil justice system. <mark>I strongly believe that everyday Missourians are entitled to a level playing field in our court system, regardless of wealth, gender, race or religion.</mark> <br><br>
+   
+                      As the daughter of two attorneys, I’ve seen firsthand how important it is is that our courts are open to each and every person.  As State Representative, I will fight to make sure the civil justice rights of Missourians are protected. 
+                  </p>
+                </div>
   </div>
-</div>
-</div>
+  
+  
+    </div>
+  </div>
+  </div>
+
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64" style="background-color: #2759a9!important; opacity: 0.9;">
   <a href="issues.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
