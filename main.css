@@ -181,3 +181,30 @@ img {
 height: 500px !important;
 max-width: 50% !important;
 } */
+
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    top: 50%;
+    width: 100%;
+    margin-top: -30px;
+    padding: 20px;
+    color: #2759a9;
+    font-weight: bold;
+    font-size: 50px;
+    user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+  }
