@@ -95,7 +95,7 @@ img {
   line-height: 70px;
 }
 
-@media (max-width: 828px) {
+@media (max-width: 1000px) {
   .w3-hide-small2 {
     display: none !important;
   }
@@ -107,7 +107,7 @@ img {
   }
 }
 
-@media (min-width: 829px) {
+@media (min-width: 1001px) {
   .w3-hide-large2 {
     display: none !important;
   }
@@ -208,3 +208,17 @@ max-width: 50% !important;
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
   }
+
+  .map-responsive{
+    /* overflow:hidden; */
+    /* padding-bottom:56.25%; */
+    /* position:relative; */
+    /* height:0; */
+}
+.map-responsive iframe{
+    /* left:0;
+    top:0; */
+    /* height:100%;
+    width:100%;
+    position:absolute; */
+}

@@ -22,6 +22,7 @@
         <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
         <a href="issues.html" class="w3-bar-item w3-button"> ISSUES</a>
         <a href="#getInvolved" class="w3-bar-item w3-button"> GET INVOLVED</a>
+        <a href="#vote" class="w3-bar-item w3-button">VOTER RESOURCES</a>
         <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
         <a href="https://twitter.com/search?q=%23maggieformo&src=typd&lang=en" target="_blank"
           class="w3-bar-item w3-button">#MAGGIEFORMO</a>
@@ -45,6 +46,7 @@
     <a href="https://secure.actblue.com/donate/maggieformo?refcode=online&amount=50" target="_blank"
       onclick="w3_close()" class="w3-bar-item w3-button"><b>DONATE</b></a>
     <a href="#getInvolved" onclick="w3_close()" class="w3-bar-item w3-button">GET INVOLVED</a>
+    <a href="#vote" onclick="w3_close()" class="w3-bar-item w3-button">VOTER RESOURCES</a>
     <!-- <a href="https://secure.actblue.com/" onclick="w3_close()" class="w3-bar-item w3-button" target="_blank">DONATE</a> -->
     <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
   </nav>
@@ -122,26 +124,23 @@
       style=" background-color:  red !important; opacity: 0.8 !important; color: white; opacity: .7;">
       <b>To keep the House District 15 blue, we need you to join our campaign. Here are a few ways you can pitch in:</b>
       <form action="https://formspree.io/team@maggieformo.com" method="POST">
-        <div class="w3-fifth">
-          <span> I'll knock doors with Maggie</span>
+        <div class="w3-fourth">
+          <span> I'll make phone calls</span>
           <input type="checkbox" name="knock">
         </div>
-        <div class="w3-fifth">
+        <div class="w3-fourth">
           <span>I'll write postcards</span>
           <input type="checkbox" name="postcards">
         </div>
-        <div class="w3-fifth">
+        <div class="w3-fourth">
           <span>I'll take a yard sign</span>
           <input type="checkbox" name="sign">
         </div>
-        <div class="w3-fifth">
+        <div class="w3-fourth">
           <span>Follow the campaign</span>
           <input type="checkbox" name="follow">
-        </div>
-        <div class="w3-fifth">
-          <span>Sign me up for anything</span>
-          <input type="checkbox" name="all">
-          <br><br>
+          <br>
+          <br>
         </div>
         <p style="max-width: 500px; margin: auto;"><input class="w3-input w3-border" type="text" placeholder="Name"
             required name="Name"></p>
@@ -158,6 +157,44 @@
         </p>
       </form>
   </div>
+
+
+
+    <!--VOTER RESOURCES-->
+    <div class="w3-container w3-row w3-center" id="vote">
+      <h2 class="w3-center">VOTER RESOURCES</h2>
+      <h3>15th District</h3>
+      <div class="map-responsive">
+        <iframe class=" w3-hide-large2" id='voteIFrame'  width="400" height="400" frameborder="0" style="border:0" allowfullscreen src="https://house.mo.gov/DistrictMapLarge.aspx?district=015"></iframe>
+        <iframe class="w3-hide-small2" id='voteIFrame'  width="670" height="700" frameborder="0" style="border:0" allowfullscreen src="https://house.mo.gov/DistrictMapLarge.aspx?district=015"></iframe>
+      </div>
+      <div style="max-width: 650px; margin: auto;">
+      <p >Boundaries of the 15th district are: 77th/80th to the north, Jackson Ave to the east, Platte Purchase/Bell Dr to the west, and Englewood and the southern boundary of Gladstone to the south.</p>
+      <br>  
+      <span>For more information about voting in Clay County visit: <a href="https://www.claycoelections.com/" target="_blank"> www.ClayCoElections.com</a> </span>
+      <br>
+      <span>For 2020 voting options visit: <a href="https://www.sos.mo.gov/elections/goVoteMissouri" target="_blank">www.sos.mo.gov/elections/goVoteMissouri</a> </span>
+      <h3>11/03/2020 General Election Information and Deadlines</h3>
+      <div style="margin: auto; width: 70%;">
+      <ul style="text-align: justify;">
+        <li>09/22/20 Absentee/Mail-In Voting begins</li>
+        <li>10/07/20 Last Day to Register in order to be eligible to vote</li>
+        <li>10/21/20 Last Day Absentee/Mail-In Ballot applications can be received</li>
+        <li>Absentee voting will be available at the Clay County Annex</li>
+        <ul style="text-align: justify;">
+          <li>1901 NE 48th St., Kansas City, MO 64118</li>
+          <ul>
+            <li>10/19 – 10/23 M-F, 8am – 5pm</li>
+            <li>10/24 Sat 9am-1pm</li>
+            <li>10/26—10/30 M-F, 8am – 5pm</li>
+            <li>10/31 Sat, 9am-1pm</li>
+            <li>Masks will be required </li>
+          </ul>
+        </ul>
+      </ul>
+    </div>
+    </div>
+    </div>
 
 
   <!-- Contact Section -->
@@ -266,6 +303,7 @@
       }
       x[slideIndex - 1].style.display = "block";
     }
+
   </script>
 
 </body>
