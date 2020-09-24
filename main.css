@@ -95,7 +95,7 @@ img {
   line-height: 70px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1160px) {
   .w3-hide-small2 {
     display: none !important;
   }
@@ -107,7 +107,7 @@ img {
   }
 }
 
-@media (min-width: 1001px) {
+@media (min-width: 1161px) {
   .w3-hide-large2 {
     display: none !important;
   }
@@ -221,4 +221,160 @@ max-width: 50% !important;
     /* height:100%;
     width:100%;
     position:absolute; */
+}
+
+/* ENDORSEMENTS */
+.perck {
+  display: flex;
+  width: 16.66%;
+  padding-right: 15px;
+  padding-left: 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.flex-space {
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-family: 'Open Sans',sans-serif;
+}
+
+.about-us-circle.matt {
+  background-image: url(https://assets.website-files.com/5e87d941bcf6e1a7a3be7841/5e97883d57a3714eb4cc30b6_mattsasin.jpg);
+}
+
+.about-us-circle.quade {
+  background-image: url(https://assets.website-files.com/5e87d941bcf6e1a7a3be7841/5f4a999dcfe39ce0680fcf9a_88175463_3567550079986612_7854031339270438912_o.jpg);
+}
+
+.about-us-circle.rfs {
+  background-image:url(https://assets.website-files.com/5e87d941bcf6e1a7a3be7841/5edbf7f8f826cfeecf9dd58a_RFS%20LOGO.jpg);
+}
+
+.about-us-circle.uaw {
+  background-image: url(https://assets.website-files.com/5e87d941bcf6e1a7a3be7841/5f1652585e19a960876d4a32_UAW%20blue_yellow.png)
+}
+
+.about-us-circle.gkcwpc {
+  background-image: url(https://assets.website-files.com/5e87d941bcf6e1a7a3be7841/5f165087e8da1334a034ac95_16143806_1153895601397922_5571805606793856229_o.png);
+}
+
+.about-us-circle.naral {
+  background-image: url(https://assets.website-files.com/5e87d941bcf6e1a7a3be7841/5ef9567a1f17de51c44e8944_naral.png);
+}
+
+.about-us-circle.iaff {
+  background-image: url(https://assets.website-files.com/5e87d941bcf6e1a7a3be7841/5edbf9d6bca2fa0d04912883_IAFF%20LOGO.png);
+}
+
+.about-us-circle.promo {
+  background-image: url(https://assets.website-files.com/5e87d941bcf6e1a7a3be7841/5f164b1a4985dcf6533de8be_PROMO%20PAC%20endorsement%20seal.png);
+}
+
+.about-us-circle.aflcio {
+  background-image:url(https://assets.website-files.com/5e87d941bcf6e1a7a3be7841/5f1651d9e8da134dd834aff3_mo_afl-cio2logo_0.png);
+}
+
+.about-us-circle.sierra {
+  background-image: url(https://assets.website-files.com/5e87d941bcf6e1a7a3be7841/5f4a969e53ac667cfed3c9be_Sierra%20Club%20Endorsement%20Seal_Color-1.png);
+}
+
+.about-us-circle.momsdemand {
+  background-image: url(https://assets.website-files.com/5e87d941bcf6e1a7a3be7841/5f4a96b55bfdfb38b09e0b0f_GSC-2020.png);
+}
+
+.about-us-circle.pp {
+  background-image: url(https://assets.website-files.com/5e87d941bcf6e1a7a3be7841/5f1657d6b891a80cf492d551_pp.png);
+  background-size: contain;
+}
+
+.about-us-circle.ibot {
+  background-image:url(https://assets.website-files.com/5e87d941bcf6e1a7a3be7841/5f4a96c15b8c59c381ce5193_Teamsters%20Logo.PNG);
+}
+
+.about-us-circle.orkc {
+  border-style: solid;
+  border-color: rgba(25,36,78,.2);
+  background-image:url(https://assets.website-files.com/5e87d941bcf6e1a7a3be7841/5ef95e4d6bc0136352c71771_OurRevolution.png);
+  background-size: contain;
+}
+
+.about-us-circle.blet {
+  background-image: url(https://assets.website-files.com/5e87d941bcf6e1a7a3be7841/5edbfc582fc9543fd8035025_BLET%20LOGO.png);
+  background-size: contain;
+  background-attachment: scroll;
+}
+
+.about-us-circle.unitedsteel {
+  background-image: url(https://assets.website-files.com/5e87d941bcf6e1a7a3be7841/5f4a96c0342ed73917db35ed_Steelworkers%20Logo.png);
+  background-position: 50% 50%;
+}
+
+.about-us-circle.cwoa {
+  background-image:url(https://assets.website-files.com/5e87d941bcf6e1a7a3be7841/5f4a96a4d52edcb2881923b9_cwa_-_table_sponsor.png);
+}
+
+.about-us-circle.ll264 {
+  background-image: url(https://assets.website-files.com/5e87d941bcf6e1a7a3be7841/5f165653cab089759294bee2_133929_178409642193953_1205685_o.jpg);
+}
+
+.about-us-circle.gkcbctc {
+  background-image: url(https://assets.website-files.com/5e87d941bcf6e1a7a3be7841/5f4a98e30bb66a0a09659a29_Greater-KC-Building-Trades-Logo-Color-1-300x142.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.about-us-circle {
+  width: 88px;
+  height: 88px;
+  border-style: none;
+  border-width: 1px;
+  border-color: #19244e;
+  border-radius: 50%;
+  background-image: url(https://assets.website-files.com/5e87d941bcf6e1a7a3be7841/5e97883d57a3714eb4cc30b6_mattsasin.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: opacity .2s ease;
+}
+
+.top-margin._15-pixels {
+  margin-top: 15px;
+  color: #19244e;
+  font-weight: 700;
+}
+
+.w-inline-block {
+  max-width: 100%;
+  display: inline-block;
+}
+
+.endorsements {
+  text-decoration: none;
+  text-align: center;
+}
+
+.flex-space, .footer-column-1, .footer-flex {
+  -webkit-box-orient: horizontal;
 }
